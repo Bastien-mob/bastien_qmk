@@ -1,0 +1,25 @@
+// Tap dance functions
+void td_space_finished(tap_dance_state_t *state, void *user_data) {
+    if (state->count == 1) {
+        if (state->pressed) {
+            // Single tap held - activate layer
+            layer_on(_WHEEL);
+        } else {
+            // Single tap released - send space
+            tap_code(KC_SPC);
+        }
+    } else if (state->count >= 2) {
+        if (state->pressed) {
+            // Send space
+            register_code(KC_SPC);
+        }
+    }
+}
+
+void td_space_reset(tap_dance_state_t *state, void *user_data) {
+    if (state->count == 1 && state->pressed) {
+        layer_off(YOUR_LAYER);
+    } else if (state->count >= 2) {
+        unregister_code(KC_SPC);
+    }
+}
