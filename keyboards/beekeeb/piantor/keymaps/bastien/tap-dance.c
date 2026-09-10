@@ -42,10 +42,9 @@
 
 
 tap_dance_action_t tap_dance_actions[] = {
-    // Tap once for Enter, twice for Escape
-    [TD_ENTER_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_ENTER, KC_ESCAPE),
     [TD_CIRC_DIAE] = ACTION_TAP_DANCE_DOUBLE(ES_CIRC, ES_DIAE),
     [TD_GRV_ACUT] = ACTION_TAP_DANCE_DOUBLE(ES_GRV, ES_ACUT),
+    [TD_QUOTE_DBLQUOTE] = ACTION_TAP_DANCE_DOUBLE(ES_QUOT, ES_DQUO),
     //  [TD_SPACE_WHEEL] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_space_wheel_finished, td_space_wheel_reset),
     //  [TD_LAYER_RARESYM_SHIFT] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_one_shot_layer_ontap_shift_onhold, td_release_shift)
 };

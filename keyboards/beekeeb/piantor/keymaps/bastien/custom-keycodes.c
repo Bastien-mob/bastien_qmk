@@ -1,6 +1,6 @@
-static uint16_t space_count = 0;
-static uint16_t hold_timer = 0;
-static bool space_pressed = false;
+/* static uint16_t space_count = 0; */
+/* static uint16_t hold_timer = 0; */
+/* static bool space_pressed = false; */
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
@@ -153,7 +153,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     break;
 
-  case B_DBL_QUOTE:
+  case  B_DBL_QUOTE:
     if (record->event.pressed) {
       SEND_STRING(SS_TAP(X_LBRC) SS_TAP(X_SPC) SS_TAP(X_LBRC) SS_TAP(X_SPC));
     }
@@ -167,7 +167,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
   case MAIL_PRO:
     if (record->event.pressed) {
-      SEND_STRING("bastien.maubert@proton.me");
+      SEND_STRING("bastien.maubert@fastmail.fr");
     }
     break;	
 
@@ -206,17 +206,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 };
 
 
-void matrix_scan_user(void) {
-  if (space_pressed && space_count == 1 && timer_elapsed(hold_timer) > TAPPING_TERM_SHORT) {
-    // Activate layer after hold threshold
-    layer_on(_SYM);
-    space_count = 3; 
-  }
-}
-
-
-
-
-
-
-
+/* void matrix_scan_user(void) { */
+/*   if (space_pressed && space_count == 1 && timer_elapsed(hold_timer) > TAPPING_TERM_SHORT) { */
+/*     // Activate layer after hold threshold */
+/*     layer_on(_SYM); */
+/*     space_count = 3;  */
+/*   } */
+/* } */

@@ -2,7 +2,8 @@
 
 enum layer_names { 
     _BASE,
-    _SYM,
+    _SYML,
+    _SYMR,
     _NAV,
     _NUM,
     _FUN,
@@ -44,9 +45,9 @@ enum custom_keycodes {
 
 // Tap Dance declarations
 enum {
-    TD_ENTER_ESC,
     TD_CIRC_DIAE,
-    TD_GRV_ACUT
+    TD_GRV_ACUT,
+    TD_QUOTE_DBLQUOTE
 };
 
 
