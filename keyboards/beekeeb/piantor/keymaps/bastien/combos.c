@@ -3,8 +3,8 @@ enum combos {
   R_CTRL_CO,
   L_ALT_CO,
   R_ALT_CO,
-  L_WIN_CO,
-  R_WIN_CO,
+  L_SUPER_CO,
+  R_SUPER_CO,
   L_SHFT_CO,
   R_SHFT_CO,
   AT_CO,
@@ -46,8 +46,8 @@ const uint16_t PROGMEM l_ctrl_combo[] = {ES_S, ES_R, ES_T, COMBO_END};
 const uint16_t PROGMEM r_ctrl_combo[] = {ES_I, ES_A, ES_L, COMBO_END};
 const uint16_t PROGMEM l_alt_combo[] = {ES_C, ES_N, ES_D, COMBO_END};
 const uint16_t PROGMEM r_alt_combo[] = {ES_U, ES_O, ES_G, COMBO_END};
-const uint16_t PROGMEM l_win_combo[] = {ES_F, ES_B, ES_M, COMBO_END};
-const uint16_t PROGMEM r_win_combo[] = {ES_COMM, E_AIGU, ES_DOT, COMBO_END};
+const uint16_t PROGMEM l_super_combo[] = {ES_F, ES_B, ES_M, COMBO_END};
+const uint16_t PROGMEM r_super_combo[] = {ES_COMM, E_AIGU, ES_DOT, COMBO_END};
 const uint16_t PROGMEM l_shft_combo[] = {MT(MOD_LCTL, KC_SPACE), ES_T, ES_R, COMBO_END};
 const uint16_t PROGMEM r_shft_combo[] = {LT(_NAV, ES_E), ES_I, ES_A, COMBO_END};
 const uint16_t PROGMEM at_combo[] = {LT(_NAV, ES_E), MT(MOD_LCTL, KC_SPACE), ES_A, COMBO_END};
@@ -86,8 +86,8 @@ combo_t key_combos[] = {
   COMBO(r_ctrl_combo, OSM(MOD_RCTL)),
   COMBO(l_alt_combo, OSM(MOD_LALT)),
   COMBO(r_alt_combo, OSM(MOD_LALT)),
-  COMBO(l_win_combo, OSM(MOD_LGUI)),
-  COMBO(r_win_combo, KC_LGUI),
+  COMBO(l_super_combo, KC_LGUI),
+  COMBO(r_super_combo, OSM(MOD_LGUI)),
   COMBO(l_shft_combo, OSM(MOD_LSFT)),
   COMBO(r_shft_combo, OSM(MOD_RSFT)),
   COMBO(at_combo, ES_AT),

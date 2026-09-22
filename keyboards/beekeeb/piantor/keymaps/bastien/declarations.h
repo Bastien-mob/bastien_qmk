@@ -27,6 +27,7 @@ enum custom_keycodes {
     I_CIRC,
     O_CIRC,
     U_CIRC,
+    CIRC,
     A_TREM,
     E_TREM,
     I_TREM,

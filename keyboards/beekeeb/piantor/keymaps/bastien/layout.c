@@ -1,21 +1,21 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_split_3x6_3(
-	         ES_QUOT,    ES_Q,    ES_C,  ES_N,  ES_D,   LT(_FUN, ES_K),          LT(_MEDIA, ES_J),     ES_U,     ES_O,     ES_G,      ES_X,       ES_QUOT,
-      OSM(MOD_LSFT),   ES_P,    ES_S,  ES_R,  ES_T,   ES_V,                                ES_Y,      ES_I,     ES_A,     ES_L,      ES_H,     OSM(MOD_RSFT),
-             KC_BSPC,   ES_W,    ES_F,  ES_B,  ES_M,  ES_Z,                              KC_ESC,    ES_COMM,  E_AIGU,    ES_DOT,  ES_MINS,    KC_DEL,
-                        KC_TAB, MT(MOD_LCTL, KC_SPACE), OSL(_SYML),                  OSL(_SYMR),  LT(_NAV, ES_E),  MT(MOD_LSFT, KC_ENTER)
+	         ES_QUOT,    ES_Q,    ES_C,  ES_N,  ES_D,  ES_K,                                        ES_J,     ES_U,     ES_O,     ES_G,      ES_X,       ES_QUOT,
+      KC_BSPC,   ES_P,    ES_S,  ES_R,  ES_T,    OSM(MOD_LSFT),                               OSM(MOD_RSFT), ES_I,     ES_A,     ES_L,      ES_H,     KC_DEL,
+            ES_Z, ES_W,    ES_F,  ES_B,  ES_M,  LT(_FUN, ES_V),                              LT(_MEDIA, ES_Y),    ES_COMM,  E_AIGU,    ES_DOT,  ES_MINS,   ES_PLUS,
+                        KC_ESC, MT(MOD_LCTL, KC_SPACE), OSL(_SYML),                  OSL(_SYMR),  LT(_NAV, ES_E),  MT(MOD_LSFT, KC_ENTER)
 			     ),
     [_SYML] = LAYOUT_split_3x6_3(
      XXXXXXX,   XXXXXXX,   ES_CCED,   ES_NTIL,   ES_TILD,   XXXXXXX,                   XXXXXXX,  ES_EQL,    ES_DQUO,   ES_QUOT,   B_QUOTE,   XXXXXXX,
-	   XXXXXXX,   ES_DIAE,   ES_CIRC,    ES_GRV,    ES_ACUT,   XXXXXXX,                  XXXXXXX,  ES_RPRN,   ES_RBRC,   ES_RABK,   ES_RCBR,   XXXXXXX,
-	   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,                   XXXXXXX,  ES_HASH,   E_CIRC,   ES_COLN,  ES_UNDS,  XXXXXXX,
-                                   	    XXXXXXX, KC_PSCR, XXXXXXX,               KC_CAPS_LOCK, E_GRAVE, XXXXXXX
+	   XXXXXXX,   ES_DIAE,   ES_GRV,    ES_CIRC,    ES_ACUT,   XXXXXXX,                  ES_PLUS,  ES_RPRN,   ES_RBRC,   ES_RABK,   ES_RCBR,   XXXXXXX,
+	   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,                   XXXXXXX,  ES_HASH,   E_CIRC,   ES_COLN,  ES_UNDS,  ES_PLUS,
+                                   	    XXXXXXX, KC_PSCR, XXXXXXX,               KC_CAPS_LOCK, E_GRAVE, KC_TAB
 			     ),
     [_SYMR] = LAYOUT_split_3x6_3(
-      XXXXXXX,   XXXXXXX,   ES_CCED,   ES_NTIL,   ES_TILD,   XXXXXXX,                   XXXXXXX,  ES_MORD,  ES_PERC,   XXXXXXX,   XXXXXXX,   XXXXXXX,
-	    KC_DEL,   ES_LCBR,   ES_LABK,   ES_LBRC,   ES_LPRN,     XXXXXXX,                  XXXXXXX,  ES_DLR,  ES_ASTR,   ES_HASH,   XXXXXXX,   XXXXXXX,
-	    XXXXXXX,  ES_COLN,   ES_BSLS,   ES_PIPE,   ES_SLSH,    XXXXXXX,                   XXXXXXX,  ES_QUES,  XXXXXXX,   ES_EXLM,   XXXXXXX,   XXXXXXX,
+      XXXXXXX,   XXXXXXX,   ES_CCED,   ES_NTIL,   ES_TILD,   XXXXXXX,                   XXXXXXX,  ES_MORD,  ES_PERC,   CIRC,   ES_AT,   XXXXXXX,
+	    KC_DEL,   ES_LCBR,   ES_LABK,   ES_LBRC,   ES_LPRN,     XXXXXXX,                  XXXXXXX,  ES_DLR,  ES_ASTR,   ES_HASH,   CIRC,   XXXXXXX,
+	    XXXXXXX,  ES_COLN,   ES_BSLS,   ES_PIPE,   ES_SLSH,    XXXXXXX,                   XXXXXXX,  ES_QUES,  ES_AMPR,   ES_EXLM,   XXXXXXX,   XXXXXXX,
                                    	  XXXXXXX, KC_ESC,  KC_CAPS_LOCK,                 XXXXXXX, ES_EURO, XXXXXXX
 			     ),
     [_NAV] = LAYOUT_split_3x6_3(

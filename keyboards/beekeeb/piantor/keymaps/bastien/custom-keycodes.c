@@ -93,6 +93,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       SEND_STRING(SS_DOWN(X_LSFT) SS_TAP(X_LBRC) SS_UP(X_LSFT) SS_TAP(X_U));
     }
     break;
+
+  case CIRC:
+    if (record->event.pressed) {
+      SEND_STRING(SS_DOWN(X_LSFT) SS_TAP(X_LBRC) SS_UP(X_LSFT) SS_TAP(X_SPC));
+    }
+    break;
+
+
   case A_TREM:
     if (record->event.pressed) {
       SEND_STRING(SS_DOWN(X_LSFT) SS_TAP(X_QUOT) SS_UP(X_LSFT) SS_TAP(X_A));
