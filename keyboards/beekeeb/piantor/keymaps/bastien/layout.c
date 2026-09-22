@@ -2,8 +2,8 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_split_3x6_3(
 	         ES_QUOT,    ES_Q,    ES_C,  ES_N,  ES_D,  ES_K,                                        ES_J,     ES_U,     ES_O,     ES_G,      ES_X,       ES_QUOT,
-      KC_BSPC,   ES_P,    ES_S,  ES_R,  ES_T,    OSM(MOD_LSFT),                               OSM(MOD_RSFT), ES_I,     ES_A,     ES_L,      ES_H,     KC_DEL,
-            ES_Z, ES_W,    ES_F,  ES_B,  ES_M,  LT(_FUN, ES_V),                              LT(_MEDIA, ES_Y),    ES_COMM,  E_AIGU,    ES_DOT,  ES_MINS,   ES_PLUS,
+      OSM(MOD_LSFT),     ES_P,    ES_S,  ES_R,  ES_T, LT(_FUN, ES_V),                           LT(_MEDIA, ES_Y), ES_I,     ES_A,     ES_L,      ES_H,     OSM(MOD_RSFT),
+                  KC_BSPC, ES_W,    ES_F,  ES_B,  ES_M,   ES_Z,                                  ES_PLUS, ES_COMM,  E_AIGU,    ES_DOT,  ES_MINS,    KC_DEL,
                         KC_ESC, MT(MOD_LCTL, KC_SPACE), OSL(_SYML),                  OSL(_SYMR),  LT(_NAV, ES_E),  MT(MOD_LSFT, KC_ENTER)
 			     ),
     [_SYML] = LAYOUT_split_3x6_3(
