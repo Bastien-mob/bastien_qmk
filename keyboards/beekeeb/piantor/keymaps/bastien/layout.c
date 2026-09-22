@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_MEDIA] = LAYOUT_split_3x6_3(
             XXXXXXX,     XXXXXXX,   KC_BRID,   XXXXXXX,   KC_BRIU,   XXXXXXX,                   XXXXXXX,    XXXXXXX,     XXXXXXX,     XXXXXXX,   XXXXXXX,   XXXXXXX,
 	    XXXXXXX,     XXXXXXX,   KC_VOLD,   KC_MUTE,   KC_VOLU,   XXXXXXX,                   XXXXXXX,    XXXXXXX,     XXXXXXX,     XXXXXXX,   XXXXXXX,   XXXXXXX,
-	    XXXXXXX,   XXXXXXX,   KC_WBAK,   XXXXXXX,   KC_WFWD,   XXXXXXX,                   XXXXXXX,    XXXXXXX,     XXXXXXX,     XXXXXXX,   XXXXXXX,   XXXXXXX,
+	    XXXXXXX,   XXXXXXX,   KC_WBAK,   KC_PSCR,   KC_WFWD,   XXXXXXX,                   XXXXXXX,    XXXXXXX,     XXXXXXX,     XXXXXXX,   XXXXXXX,   XXXXXXX,
                                          	    KC_MPRV,   KC_MPLY,  KC_MNXT,       XXXXXXX,  XXXXXXX,  XXXXXXX
 				  ),
     [_ALTTAB] = LAYOUT_split_3x6_3(
